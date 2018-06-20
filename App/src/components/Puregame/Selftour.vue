@@ -5,7 +5,8 @@
         <div class="text">半自助游</div>
         <img class="user" src="../../../imgs/download-5.png" alt="">
       </div>
-      <Nav></Nav>
+      <Search></Search>
+      <Kind></Kind>
       <swiper style="overflow: hidden" class="scroll" :options="swiperOption" ref="mySwiper">
         <!-- slides -->
         <swiper-slide class="show"><img src="../../../imgs/588b27c9-0cf7-41a3-bfdd-6e2726efb4ad-2018-12-13 144921-1.jpg" alt=""></swiper-slide>
@@ -52,12 +53,14 @@
 </template>
 
 <script>
-  import  Nav from "../navcon/Nav";
+  import Kind from "../navcon/Kind"
+  import Search from "../navcon/Search"
   import { swiper, swiperSlide } from 'vue-awesome-swiper'
     export default {
         name: "Selftour",
         components:{
-          Nav,
+          Kind,
+          Search,
           swiper,
           swiperSlide,
         },

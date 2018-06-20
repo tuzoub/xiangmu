@@ -5,7 +5,8 @@
         <div class="text">查看更多</div>
         <img class="user" src="../../../imgs/download-5.png" alt="">
       </div>
-      <Nav></Nav>
+     <Search></Search>
+      <Kind></Kind>
       <div class="classification">
         <div class="bao">
           <div class="all">全部</div><div class="line"></div>
@@ -30,11 +31,13 @@
 </template>
 
 <script>
-  import  Nav from "../navcon/Nav";
+  import Kind from "../navcon/Kind"
+  import Search from "../navcon/Search"
     export default {
         name: "Themetour",
         components:{
-          Nav,
+          Kind,
+          Search,
         },
          data() {
           return {

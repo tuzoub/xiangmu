@@ -6,7 +6,8 @@
           <div class="text">纯玩游</div>
           <img class="user" src="../../../imgs/download-5.png" alt="">
         </div>
-      <Nav></Nav>
+        <Search></Search>
+        <Kind></Kind>
         <swiper style="overflow: hidden" class="scroll" :options="swiperOption" ref="mySwiper">
           <!-- slides -->
           <swiper-slide class="show"><img src="../../../imgs/e13a2388-f460-471f-839d-6f9ee07e3e02-湖边（自拍）.jpg" alt=""></swiper-slide>
@@ -53,12 +54,14 @@
     </div>
 </template>
 <script>
-   import  Nav from "../navcon/Nav";
+  import Kind from "../navcon/Kind"
+  import Search from "../navcon/Search"
    import { swiper, swiperSlide } from 'vue-awesome-swiper'
     export default {
         name: "Puregame",
         components:{
-            Nav,
+            Kind,
+            Search,
             swiper,
             swiperSlide
       },

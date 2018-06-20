@@ -5,6 +5,7 @@
         <div class="text">关于我们</div>
         <img class="user" src="../../../imgs/download-5.png" alt="">
       </div>
+      <Kind></Kind>
       <Map></Map>
       <div class="tab">
         <div class="bao">
@@ -18,11 +19,13 @@
 </template>
 
 <script>
+  import Kind from "../navcon/Kind"
   import Map from "../Puregame/Map"
     export default {
         name: "About",
         components:{
           Map,
+          Kind
         },
         data(){
           return{

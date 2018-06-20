@@ -33,9 +33,13 @@
 				<div><img src="../../../imgs/btn6.png" alt="">
 					<p>我的订单</p>
 				</div>
-				<div><img src="../../../imgs/btn7.png" alt="">
-					<p>热门爆款</p>
-				</div>
+
+        <router-link tag="div" to="/Hot">
+          <img src="../../../imgs/btn7.png" alt="">
+          <p>热门爆款</p>
+        </router-link>
+
+
 				<div><img src="../../../imgs/btn8.png" alt="">
 					<p>我的走途</p>
 				</div>
@@ -208,19 +212,19 @@
 		outline: none;
 		text-decoration: none;
 	}
-	
+
 	.Homepage {
 		background-color: rgb(238, 242, 245);
 		width: 100%;
 		overflow: hidden;
 		position: relative;
 	}
-	
+
 	.imghead {
 		width: 100%;
 		height: 35vh;
 	}
-	
+
 	.inpt {
 		width: 100%;
 		position: absolute;
@@ -230,7 +234,7 @@
 		line-height: 3rem;
 		overflow: hidden;
 	}
-	
+
 	.inpts {
 		height: #000;
 		width: 50vw;
@@ -243,13 +247,13 @@
 		text-align: center;
 		line-height: 1.6rem;
 	}
-	
+
 	.inpts>input {
 		font-size: 14px;
 		height: 80%;
 		width: 90%;
 	}
-	
+
 	.The_login {
 		color: rgb(255, 255, 255);
 		font-size: 1rem;
@@ -257,7 +261,7 @@
 		float: right;
 		margin-right: 2rem;
 	}
-	
+
 	.bevel {
 		width: 100%;
 		height: 1rem;
@@ -268,7 +272,7 @@
 		z-index: 6666;
 		bottom: 10px;
 	}
-	
+
 	.Navigation_page {
 		margin-top: -20px;
 		width: 100%;
@@ -278,63 +282,63 @@
 		align-content: center;
 		background: white;
 	}
-	
+
 	.Navigation_pages {
 		background: white;
 		width: 90%;
 		height: 20vh;
 		margin-top: 5vh;
 	}
-	
+
 	.Navigation_pages>div {
 		float: left;
 		width: 25%;
 		height: 50%;
 		text-align: center;
 	}
-	
+
 	.Navigation_pages>div>img {
 		height: 50%;
 		width: 50%;
 	}
-	
+
 	.Navigation_pages>div>p {
 		color: gray;
 	}
-	
+
 	.project {
 		width: 100%;
 		padding: 0.47rem 0.18rem 0.35rem;
 	}
-	
+
 	.project>div:nth-child(1) {
 		width: 100%;
 		height: 2rem;
 		display: flex;
 		align-items: center;
 	}
-	
+
 	.ddd {
 		width: 100vw;
 		height: 28vh;
 		position: relative;
 		background: red;
 	}
-	
+
 	.ddd>div {
 		height: 100%;
 		width: 300vw;
 		background: white;
 		position: absolute;
 	}
-	
+
 	.projecttwo {
 		width: 100vw;
 		overflow: hidden;
 		float: left;
 		background: white;
 	}
-	
+
 	.projecttwo>div {
 		text-align: center;
 		width: 50%;
@@ -342,30 +346,30 @@
 		float: left;
 		text-align: center;
 	}
-	
+
 	.projecttwo>div>img {
 		width: 90%;
 		height: 60%;
 		border-radius: 5%;
 	}
-	
+
 	.destination {
 		background: white;
 		width: 100%;
 	}
-	
+
 	.destination>div:nth-child(1) {
 		padding-top: 3vh;
 		padding-bottom: 3vh;
 	}
-	
+
 	.destinations {
 		width: 100%;
 		height: 25vh;
 		overflow: hidden;
 		margin-top: 3vh;
 	}
-	
+
 	.destinations>div {
 		width: 33.3%;
 		height: 50%;
@@ -374,19 +378,19 @@
 		float: left;
 		align-content: center;
 	}
-	
+
 	.destinations>div>img {
 		border-radius: 8%;
 		height: 80%;
 		width: 80%;
 	}
-	
+
 	.Travelbymyself {
 		width: 100%;
 		overflow: hidden;
 		padding-bottom: 7vh;
 	}
-	
+
 	.Travelbymyself>div {
 		width: 50%;
 		overflow: hidden;
@@ -394,13 +398,13 @@
 		text-align: center;
 		float: left;
 	}
-	
+
 	.Travelbymyself>div>img {
 		width: 90%;
 		border-radius: 5%;
 		height: 6rem;
 	}
-	
+
 	.Travelbymyself>ul {
 		width: 100$;
 		height: 30px;
@@ -410,14 +414,14 @@
 		padding-top: 3vh;
 		padding-bottom: 3vh;
 	}
-	
+
 	.Travelbymyself>ul>li:nth-child(1) {
 		background: rgb(239, 173, 75);
 		width: 0.2rem;
 		height: 1.4rem;
 		margin-left: 0.5rem;
 	}
-	
+
 	.Travelbymyself>ul>li:nth-child(2) {
 		color: rgb(84, 97, 117);
 		font-size: 1.1rem;
