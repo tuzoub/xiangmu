@@ -29,6 +29,7 @@
 	
 	.news>ul>img {
 		width: 20px;
+		display: inherit;
 		height: 25px;
 	}
 	

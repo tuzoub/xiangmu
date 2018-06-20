@@ -6,7 +6,7 @@
 				<i></i>
 				<input placeholder="搜索目的地和关键词" type="text">
 			</div>
-			<div class="The_login"><span>登录</span>/<span>注册</span></div>
+			<div class="The_login" @click="login"><span>登录</span>/<span>注册</span></div>
 		</div>
 		<div class="bevel"></div>
 		<div class="Navigation_page">
@@ -15,37 +15,31 @@
 					<img src="../../../imgs/btn1.png" alt="">
 					<p>纯玩游</p>
 				</router-link>
-
 				<router-link tag="div" to="/Selftour">
 					<img src="../../../imgs/btn2.png" alt="">
 					<p>半自助游</p>
 				</router-link>
-
 				<div><img src="../../../imgs/btn3.png" alt="">
 					<p>VIP定制</p>
 				</div>
-
 				<router-link tag="div" to="/Themetour">
 					<img src="../../../imgs/btn4.png" alt="">
 					<p>主题游</p>
 				</router-link>
-
 				<router-link tag="div" to="/About">
 					<img src="../../../imgs/btn5.png" alt="">
 					<p>关于我们</p>
 				</router-link>
-
 				<div><img src="../../../imgs/btn6.png" alt="">
 					<p>我的订单</p>
 				</div>
-				<router-link tag="div" to="/Hot">
-					<img src="../../../imgs/btn7.png" alt="">
+				<div><img src="../../../imgs/btn7.png" alt="">
 					<p>热门爆款</p>
-				</router-link>
-
+				</div>
 				<div><img src="../../../imgs/btn8.png" alt="">
 					<p>我的走途</p>
 				</div>
+
 			</div>
 		</div>
 		<img style="width: 100%;height: 20vh;" src="http://m.zoutu.com/res/img/471657ffff.png" alt="">
@@ -96,11 +90,10 @@
 			</div>
 			<div class="destinations">
 				<div v-for="(v,k) in datas2">
-					<img :src="v.t_img" alt="" :tid='v.t_id'>
+					<img :src="v.t_img" alt="" :tid='v.t_id' @click="page(k)">
 				</div>
 			</div>
 		</div>
-
 		<div class="Travelbymyself">
 			<ul>
 				<li></li>
@@ -108,13 +101,13 @@
 			</ul>
 
 			<div v-for="(v,k) in datas3">
-				<img :src="v.t_img" alt="" :tid='v.t_id'>
+				<img :src="v.t_img" alt="" :tid='v.t_id' @click="page(k)" ref='ccc'>
 				<p style="color: rgb(84, 97, 117);font-size:0.8rem;">{{v.t_endcity}}</p>
 				<p style="color: rgb(158, 170, 184);font-size:12px;">{{v.t_note}}</p>
 				<p style="color: rgb(157, 170, 184);"><span style="color: rgb(255, 115, 97);">¥   {{v.t_price}}</span>元起</p>
 			</div>
 		</div>
-		<Tabar></Tabar>
+		<Tab></Tab>
 	</div>
 </template>
 <script>
