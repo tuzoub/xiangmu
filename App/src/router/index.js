@@ -10,6 +10,9 @@ import Themetour from "@/components/Puregame/Themetour";
 import Puregames from "@/components/Puregame/Puregames";
 import Selftour from "@/components/Puregame/Selftour";
 import About from "@/components/Puregame/About";
+import Weibo from '@/components/tabar/weibo';
+import Newa from "@/components/tabar/news";
+import Hot from "@/components/Puregame/Hot";
 var router = new VRouter({
 	routes: [{
 		path: "/",
@@ -50,6 +53,17 @@ var router = new VRouter({
 		name: 'About',
 		path: '/About',
 		component: About
+	}, {
+		name: 'Weibo',
+		path: '/Weibo',
+		component: Weibo
+	}, {
+		path: '/Newa',
+		component: Newa
+	}, {
+		name: 'Hot',
+		path: '/Hot',
+		component: Hot
 	}]
 });
 export default router;
